@@ -64,7 +64,10 @@ class Iterator
 
 		memoize
 		def orientation
-			Orientation.new(@iterator.orientation)
+			Orientation.new({orientation: :UP,
+											 writing_direction: :LEFT_TO_RIGHT,
+											 textline_order: :TOP_TO_BOTTOM,
+											 deskew_angle: -0.0})
 		end
 
 		memoize
